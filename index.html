@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>TeamStack</title>
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/app.css"></link>
     <!-- 1. Load libraries -->
@@ -17,13 +18,14 @@
     <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
 
     <!-- 2. Load our 'modules' -->
-    <!-- <script src='src/components/header/header.component.js'></script> -->
+    <script src='src/components/header/header.component.js'></script>
+    <script src="src/pages/home/home.page.js"></script>
     <script src='src/app.js'></script>
   </head>
 
   <!-- 3. Display the application -->
   <body>
-    <header>Loading...</header>
+    <app>Loading...</app>
   </body>
 
 </html>

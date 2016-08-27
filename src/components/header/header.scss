@@ -1,0 +1,26 @@
+.container {
+  height: 50px;
+  background: black;
+  color: white;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 20px;
+
+  .inner {
+    div {
+      display: inline-block;
+    }
+
+    .logo {
+      float:left;
+      img {
+        height: 30px;
+        padding-top: 10px;
+      }
+    }
+
+    .title {
+      padding: 0 10px;
+    }
+  }
+}

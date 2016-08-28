@@ -1,12 +1,12 @@
 (function(app) {
 
-  var dir = 'src/components/header/';
-  var templateUrl = dir + "header.html";
-  var styles = [ dir + "header.css"];
+  var dir = 'src/pages/login/';
+  var templateUrl = dir + "login.html";
+  var styles = [ dir + "login.css"];
 
-  app.HeaderComponent =
+  app.Pages.Login =
     ng.core.Component({
-      selector: 'header',
+      selector : "login",
       styleUrls : styles,
       templateUrl: templateUrl,
     })

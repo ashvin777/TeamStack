@@ -1,9 +1,9 @@
 <html>
   <head>
-    <title>TeamStack</title>
+    <title>Title</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="src/app.css"></link>
+    <link rel="stylesheet" href="src/app/app.css"></link>
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -18,9 +18,11 @@
     <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
 
     <!-- 2. Load our 'modules' -->
-    <script src='src/components/header/header.component.js'></script>
-    <script src="src/pages/home/home.page.js"></script>
-    <script src='src/app.js'></script>
+    <script src='src/app/app.js'></script>
+    <script src='src/services/token.js'></script>
+    <script src='src/components/header/header.js'></script>
+    <script src="src/pages/login/login.js"></script>
+    <script src="src/pages/home/home.js"></script>
   </head>
 
   <!-- 3. Display the application -->

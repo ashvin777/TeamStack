@@ -1,22 +1,20 @@
 .container {
-  height: 50px;
-  background: black;
+  background: rgb(2, 106, 167);
   color: white;
-  line-height: 50px;
-  padding: 0 15px;
+  padding: 5px 5px;
   font-size: 20px;
-
+  height: 30px;
   .inner {
     div {
       display: inline-block;
     }
 
     .logo {
-      float:left;
-      img {
-        height: 30px;
-        padding-top: 10px;
-      }
+      float: left;
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+      background: #0083D0;
     }
 
     .title {

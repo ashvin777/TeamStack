@@ -16,12 +16,15 @@
     app.Modules.RouterModule =
       ng.router.RouterModule.forRoot([{
         path: '',
-        component: app.Pages.Home
+        component: app.Pages.Login,
+        pathMatch: 'full'
       }, {
-        path: 'login',
-        component: app.Pages.Login
-      }]);
-      
+        path: 'home',
+        component: app.Pages.Home
+      }], {
+        useHash: true
+      });
+
     app.Components.AppComponent = ng.core.Component({
         selector: "app",
         directives: [ng.router.RouterOutlet, ng.router.RouterLink],
@@ -33,7 +36,7 @@
 
     app.Modules.AppModule = ng.core.NgModule({
         imports: [ng.platformBrowser.BrowserModule, app.Modules.RouterModule],
-        declarations: [app.Components.AppComponent, app.Components.Header, app.Pages.Home, app.Pages.Login],
+        declarations: [app.Components.AppComponent, app.Components.Header, app.Components.GoogleLogin, app.Pages.Home, app.Pages.Login],
         bootstrap: [app.Components.AppComponent]
       })
       .Class({

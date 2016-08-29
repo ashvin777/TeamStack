@@ -12,7 +12,7 @@
     })
     .Class({
       constructor: function() {
-        this.title = "Title"
+        this.title = "TeamStack"
       }
     });
 

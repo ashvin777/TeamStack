@@ -37,7 +37,8 @@
     app.Modules.AppModule = ng.core.NgModule({
         imports: [ng.platformBrowser.BrowserModule, app.Modules.RouterModule],
         declarations: [app.Components.AppComponent, app.Components.Header, app.Components.GoogleLogin, app.Pages.Home, app.Pages.Login],
-        bootstrap: [app.Components.AppComponent]
+        bootstrap: [app.Components.AppComponent],
+        providers : [app.Services.Token]
       })
       .Class({
         constructor: function() {}

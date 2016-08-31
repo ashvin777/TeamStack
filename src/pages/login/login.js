@@ -10,12 +10,20 @@
       selector : "login",
       styleUrls : styles,
       templateUrl: templateUrl,
-      directives : directives
+      directives : directives,
     })
     .Class({
-      constructor: function() {
-        this.title = "TeamStack"
+      constructor: function(TokenService) {
+        this.title = "TeamStack";
+        this.TokenService = TokenService;
+      },
+      load : function(){
+        this.TokenService.getAccessToken().then(function(){
+          console.log("token Services succeed");
+        })
       }
     });
+
+  app.Pages.Login.parameters = [app.Services.Token]
 
 })(window.app || (window.app = {}));

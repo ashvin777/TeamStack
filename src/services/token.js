@@ -9,6 +9,6 @@
         resolve(50);
       });
     }
-  })
+  });
 
 })(window.app || (window.app = {}))
